@@ -1,12 +1,12 @@
 function MediaPlayer(config) {
   this.media = config.el;
-  this.plugis = config.plugis || [];
+  this.plugin = config.plugin || [];
   
   this._initPlugins(); 
 }
 
-MediaPlayer.prototype._initPlugis = function() {
-  this.plugis.forEach(plugin => {
+MediaPlayer.prototype._initPlugins = function() {
+  this.plugin.forEach(plugin => {
     plugin.run(this);
   });
 };
