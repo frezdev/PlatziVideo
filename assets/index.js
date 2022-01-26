@@ -1,10 +1,10 @@
 import MediaPlayer from './MediaPlayer.js';
-import AutoPlay from './plugins/AutoPlay.js';
+import AutoPlay from '../plugins/AutoPlay.js';
 
 const video = document.querySelector('video');
 const player = new MediaPlayer({ 
   el: video, 
-  plugin: [
+  plugins: [
     new AutoPlay()
   ]
 });
