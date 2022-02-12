@@ -1,20 +1,26 @@
 {
   "name": "platzivideo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Reproductor de video",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carlosandf/PlatziVideo.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Carlos Florez <carlos.andres.ff2912@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/carlosandf/PlatziVideo/issues"
   },
-  "homepage": "https://github.com/carlosandf/PlatziVideo#readme"
+  "homepage": "https://github.com/carlosandf/PlatziVideo#readme",
+  "devDependencies": {
+    "parcel": "^2.3.1"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }
