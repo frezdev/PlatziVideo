@@ -57,7 +57,42 @@ const fourPlus6 = addFour(6);
 
 
 function fullName(firstName: string, lastName: string = "Florez"): string {
-  return `${firstName}  ${lastName}`;
+  return `${firstName} ${lastName}`;
 }
 
 const carlos = fullName("Carlos");
+console.log(carlos);
+
+
+// Interfaces
+
+// creé un nuevo 'enum' para el ejemplo que está mas a delante
+enum Color2 {
+  Rojo = "Rojo",
+  Verde = "Verde"
+}
+
+interface Rectangulo {
+  ancho: number,
+  alto: number,
+  color?: Color2,
+}
+
+let rect: Rectangulo = {
+  ancho: 4,
+  alto: 6,
+  // color: Color2.Rojo
+}
+
+function area(r: Rectangulo) {
+  return r.alto * r.ancho
+}
+
+const areaRect = area(rect);
+console.log(areaRect);
+
+rect.toString = function() {
+  return this.color ? `Un rectangulo ${this.color}` : `Un rectangulo bonito`;
+}
+
+console.log(rect.toString());
