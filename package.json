@@ -17,10 +17,11 @@
     "url": "https://github.com/carlosandf/PlatziVideo/issues"
   },
   "homepage": "https://github.com/carlosandf/PlatziVideo#readme",
-  "devDependencies": {
-    "parcel": "^2.3.1"
-  },
   "browserslist": [
     "last 1 Chrome version"
-  ]
+  ],
+  "devDependencies": {
+    "parcel": "^2.3.2",
+    "typescript": "^4.5.5"
+  }
 }

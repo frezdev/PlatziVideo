@@ -17,12 +17,12 @@ buttonPlay.onclick = () => player.togglePlay();
 const buttonMute: HTMLElement = document.querySelector('.mute');
 buttonMute.onclick = () => player.toggleMute();
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
-      .catch(error => {
-        console.log('Service worker registration failed:', error);
-      }
-    );
-} else {
-  console.log('Service workers are not supported.');
-}
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('/sw.js')
+//       .catch(error => {
+//         console.log('Service worker registration failed:', error);
+//       }
+//     );
+// } else {
+//   console.log('Service workers are not supported.');
+// }
