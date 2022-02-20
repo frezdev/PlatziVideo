@@ -49,4 +49,9 @@ class PriceDisplay implements Observer {
 const value = new BitcoinPrice();
 const display = new PriceDisplay();
 
-value.subscribe(display);
+
+const Subscribe: HTMLButtonElement = document.querySelector("#Subscribe")
+Subscribe.addEventListener("click", () => value.subscribe(display));
+
+const Unsubscribe: HTMLButtonElement  = document.querySelector("#Unsubscribe")
+Unsubscribe.addEventListener("click", () => value.unsubscribe(display));
