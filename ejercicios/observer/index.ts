@@ -11,7 +11,7 @@ class BitcoinPrice implements Subject {
   observers: Observer[] = [];
 
   constructor() {
-    const el: HTMLInputElement = document.querySelector("#value")
+    const el: HTMLInputElement | any = document.querySelector("#value")
     el.addEventListener('input', () => {
       this.notify(el.value);
     })
@@ -35,7 +35,7 @@ class BitcoinPrice implements Subject {
 }
 
 class PriceDisplay implements Observer {
-  private el: HTMLElement;
+  private el: HTMLElement | any;
 
   constructor() {
     this.el = document.querySelector("#price");
@@ -50,8 +50,8 @@ const value = new BitcoinPrice();
 const display = new PriceDisplay();
 
 
-const Subscribe: HTMLButtonElement = document.querySelector("#Subscribe")
+const Subscribe: HTMLButtonElement | any = document.querySelector("#Subscribe")
 Subscribe.addEventListener("click", () => value.subscribe(display));
 
-const Unsubscribe: HTMLButtonElement  = document.querySelector("#Unsubscribe")
+const Unsubscribe: HTMLButtonElement | any = document.querySelector("#Unsubscribe")
 Unsubscribe.addEventListener("click", () => value.unsubscribe(display));
