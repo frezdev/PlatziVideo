@@ -33,7 +33,6 @@ class BitcoinPrice implements Subject {
     this.observers.forEach(observer => observer.update(data));
   }
 }
-
 class PriceDisplay implements Observer {
   private el: HTMLElement | any;
 
