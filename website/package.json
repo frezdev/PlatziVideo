@@ -25,6 +25,6 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@carlosandf/mediaplayer": "^1.0.0"
+    "@carlosandf/mediaplayer": "^1.0.1"
   }
 }
