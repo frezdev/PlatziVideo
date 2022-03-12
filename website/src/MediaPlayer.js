@@ -1,4 +1,3 @@
-debugger
 class MediaPlayer {
     constructor(config) {
         this.media = config.el;

@@ -1,4 +1,4 @@
-import Ads from "./Ads";
+import Ads from "./Ads.js";
 class AdsPlugin {
     constructor() {
         this.ads = Ads.getInstance();
